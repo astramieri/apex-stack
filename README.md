@@ -108,3 +108,14 @@ Restart NGINX.
 ```
 sudo nginx -s reload
 ```
+
+### Step 5 - Obtain an SSL Certificate
+
+Install Certbot.
+
+```
+sudo dnf install epel-release -y
+sudo dnf install python3 python3-pip -y
+
+sudo certbot --nginx
+```
