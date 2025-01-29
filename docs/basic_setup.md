@@ -43,7 +43,7 @@ Check NGINX status.
 sudo systemctl status nginx
 ```
 
-### Step 3 - Configure firewall and rules
+## Step 3 - Configure instance firewall
 
 Configure and reload firewall.
 
@@ -53,55 +53,17 @@ sudo firewall-cmd --permanent --zone=public --add-service=https
 sudo firewall-cmd --reload
 ```
 
-Add ingress rules for OCI VCN.
+Check firewall.
+
+```
+sudo firewall-cmd --list-all
+```
+
+## Step 4 - Configure OCI ingress rules
+
+Add ingress rules for VCN.
 
 ```
 source-type=CIDR source-cidr=0.0.0.0/0 destination-port-range=80
 source-type=CIDR source-cidr=0.0.0.0/0 destination-port-range=443
-```
-
-### Step 4 - Configure NGINX for custom domain (TOFIX)
-
-Add website configuration.
-
-```
-sudo nano /etc/nginx/conf.d/mydomain.com.conf
-
-server {
-    listen         80;
-    listen         [::]:80;
-    server_name    mydomain.com www.mydomain.com;
-    root           /usr/share/nginx/html/mydomain.com;
-    index          index.html;
-    try_files $uri /index.html;
-}
-```
-
-Create the website directory.
-
-```
-sudo mkdir /usr/share/nginx/html/mydomain.com
-```
-
-Test NGINX configuration.
-
-```
-sudo nginx -t
-```
-
-Restart NGINX.
-
-```
-sudo nginx -s reload
-```
-
-### Step 5 - Obtain an SSL Certificate
-
-Install Certbot.
-
-```
-sudo dnf install epel-release -y
-sudo dnf install python3 python3-pip -y
-
-sudo certbot --nginx
 ```
