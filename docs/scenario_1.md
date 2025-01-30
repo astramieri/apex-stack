@@ -44,3 +44,40 @@ server {
     }
 }
 ```
+
+## Step 2 - Install Let´s Encrypt
+
+Enable the EPEL repository-
+
+```
+cd /tmp
+
+wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+
+sudo rpm -Uvh /tmp/epel-release-latest-8.noarch.rpm
+```
+
+Install ```snapd```.
+
+```
+sudo dnf install -y snapd
+sudo systemctl enable --now snapd.socket
+sudo systemctl start snapd
+sudo ln -s /var/lib/snapd/snap /snap
+
+sudo snap install core
+sudo snap refresh core
+```
+
+Install ```CertBot```.
+
+```
+sudo snap install --classic certbot
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+```
+
+Run ```CertBot```.
+
+```
+sudo certbot --nginx
+```
