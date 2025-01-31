@@ -45,9 +45,9 @@ server {
 }
 ```
 
-## Step 2 - Install Let´s Encrypt
+## Step 2 - Install *Let´s Encrypt*
 
-Enable the EPEL repository-
+Enable the EPEL repository.
 
 ```
 cd /tmp
@@ -80,4 +80,24 @@ Run ```CertBot```.
 
 ```
 sudo certbot --nginx
+```
+
+## Step 3 - Automate certificate renewal
+
+Create a new cronjob.
+
+```
+sudo crontab -e
+```
+
+Add the following entry.
+
+```
+0 0 * * * /bin/certbot renew --quiet --post-hook "systemctl restart nginx"
+```
+
+Check cronjob schedules.
+
+```
+sudo crontab -l
 ```
