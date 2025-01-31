@@ -120,8 +120,6 @@ Edit the NGINX configuration file.
 sudo nano /etc/nginx/conf.d/mydomain.com.conf
 ```
 
-Rewrite this entry.
-
 NOTE: replace ```<my_apex_workspace>``` and ```<my_apex_app>```.
 
 ```
