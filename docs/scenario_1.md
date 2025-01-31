@@ -17,7 +17,7 @@ Add a reverse proxy entry for the domain ```mydomain.com```.
 sudo nano /etc/nginx/conf.d/mydomain.com.conf
 ```
 
-NOTE: replace ```<my_apex_url>``` with the APEX workspace URL.
+NOTE: replace ```<my_apex_url>```.
 
 ```
 server {
@@ -122,11 +122,11 @@ sudo nano /etc/nginx/conf.d/mydomain.com.conf
 
 Rewrite this entry.
 
-NOTE: replace ```<my_apex_app>``` with the APEX app URL.
+NOTE: replace ```<my_apex_workspace>``` and ```<my_apex_app>```.
 
 ```
 location / {
-    rewrite ^/$ /ords/r/apps/<my_apex_app> permanent;
+    rewrite ^/$ /ords/r/<my_apex_workspace>/<my_apex_app> permanent;
 }
 ```
 
