@@ -111,3 +111,33 @@ sudo cat /var/log/audit/audit.log | grep nginx | grep denied | audit2allow -M ap
 
 sudo semodule -i apex_proxy.pp
 ```
+
+## Step 5 - Point to a specific APEX app
+
+Edit the NGINX configuration file.
+
+```
+sudo nano /etc/nginx/conf.d/mydomain.com.conf
+```
+
+Rewrite this entry.
+
+NOTE: replace ```<my_apex_app>``` with the APEX app URL.
+
+```
+location / {
+    rewrite ^/$ /ords/r/apps/<my_apex_app> permanent;
+}
+```
+
+Test NGINX configuration.
+
+```
+sudo nginx -t 
+```
+
+Restart NGINX.
+
+```
+sudo nginx -s reload
+```
