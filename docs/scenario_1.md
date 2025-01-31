@@ -96,8 +96,18 @@ Add the following entry.
 0 0 * * * /bin/certbot renew --quiet --post-hook "systemctl restart nginx"
 ```
 
-Check cronjob schedules.
+Check cronjob.
 
 ```
 sudo crontab -l
+```
+
+## Step 4 - Fix Bad Gateway 
+
+Run this commands.
+
+```
+sudo cat /var/log/audit/audit.log | grep nginx | grep denied | audit2allow -M apex_proxy
+
+sudo semodule -i apex_proxy.pp
 ```
