@@ -9,6 +9,12 @@ The architecture includes:
 
 Please note that the following points are not intended as a step-by-step guide but rather a collection of helpful reminders to refer to as needed.
 
+systemctl is-system-running
+
+## Step 0 - Basic Setup
+
+See notes [here](./docs/basic_setup.md).
+
 ## Step 1 - Configure NGINX for APEX
 
 Add a reverse proxy entry for the domain ```mydomain.com```.
