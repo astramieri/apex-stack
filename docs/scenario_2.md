@@ -10,8 +10,6 @@ The architecture includes:
 
 Please note that the following points are not intended as a step-by-step guide but rather a collection of helpful reminders to refer to as needed.
 
-systemctl is-system-running
-
 ## Step 0 - Basic Setup
 
-See notes [here](./docs/basic_setup.md).
+See notes [here](./basic_setup.md).

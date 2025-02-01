@@ -2,7 +2,7 @@
 
 Please note that the following points are not intended as a step-by-step guide but rather a collection of helpful reminders to refer to as needed
 
-## Step 1 - Setup instance
+## Step 0 - Update system
 
 Update system packages.
 
@@ -10,15 +10,13 @@ Update system packages.
 sudo dnf update -y
 ```
 
+## Step 1 - Install Java
+
 Install Java (latest).
 
 ```
 sudo dnf install -y java-21-openjdk
-```
 
-Check Java version.
-
-```
 java -version
 ```
 
