@@ -45,6 +45,12 @@ server {
 }
 ```
 
+Test NGINX configuration.
+
+```
+sudo nginx -t 
+```
+
 ## Step 2 - Install *Let´s Encrypt*
 
 Enable the EPEL repository.
