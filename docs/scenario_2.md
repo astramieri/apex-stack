@@ -13,3 +13,27 @@ Please note that the following points are not intended as a step-by-step guide b
 ## Step 0 - Basic Setup
 
 See notes [here](./basic_setup.md).
+
+## Step 1 - Install ORDS
+
+Install ORDS from the repositories.
+
+```
+sudo dnf install -y ords
+```
+
+## Step 2 - Upload wallet
+
+Copy the wallet to the instance.
+
+```
+scp -i <path>\<key> <path>\<wallet> opc@<ip>:/tmp
+```
+
+Move the wallet and set right permissions.
+
+```
+sudo mv /tmp/<wallet> /opt/oracle
+
+sudo chown oracle:oinstall /opt/oracle/<wallet>
+```
