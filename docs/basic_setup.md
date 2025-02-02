@@ -67,3 +67,25 @@ Add ingress rules for VCN.
 source-type=CIDR source-cidr=0.0.0.0/0 destination-port-range=80
 source-type=CIDR source-cidr=0.0.0.0/0 destination-port-range=443
 ```
+
+## Step 5 - Setup APEX static resources (CDN)
+
+[Oracle APEX Static Resources on Content Delivery Network](https://blogs.oracle.com/apex/post/announcing-oracle-apex-static-resources-on-content-delivery-network)
+
+```
+begin 
+   apex_instance_admin.set_parameter(
+      p_parameter => 'IMAGE_PREFIX',
+      p_value     => 'https://static.oracle.com/cdn/apex/24.1.7/' );
+   
+   commit;
+end;
+```
+
+Check update.
+
+```
+-- ANTE: /i/24.1.7/
+-- POST: https://static.oracle.com/cdn/apex/24.1.7/
+select apex_instance_admin.get_parameter('IMAGE_PREFIX') from dual;
+```
