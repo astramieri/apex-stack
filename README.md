@@ -4,10 +4,6 @@ This repository contains notes and configurations for setting up a full Oracle A
 
 The goal is to create a production-ready architecture that leverages OCI's free resources while maintaining scalability, security, and best practices.
 
-## Basic Setup
-
-See notes [here](./docs/basic_setup.md).
-
 ## Scenario 1
 
 The architecture includes:
