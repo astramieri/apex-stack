@@ -22,6 +22,8 @@ Install ORDS from the repositories.
 sudo dnf install -y ords
 ```
 
+**NOTE**. The package creates the ```oracle``` user and puts the installation and configuration under the oracle ownership.
+
 ## Step 2 - Upload wallet
 
 Copy the wallet to the instance.
