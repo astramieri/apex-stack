@@ -89,3 +89,12 @@ BEGIN
     );
 END;
 ```
+
+## Step 4 - Setup ORDS to start automatically
+
+Setup ORDS to start automatically on boot.
+
+```
+sudo systemctl start ords
+sudo systemctl enable ords
+```
