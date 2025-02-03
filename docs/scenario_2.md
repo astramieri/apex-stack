@@ -16,10 +16,24 @@ See notes [here](./basic_setup.md).
 
 ## Step 1 - Install ORDS
 
+Check ADB ORDS version.
+
+```
+SELECT ords.installed_version FROM dual;
+
+24.3.2.r3121009
+```
+
+Check ORDS package version.
+
+```
+sudo dnf --showduplicates list ords
+```
+
 Install ORDS from the repositories.
 
 ```
-sudo dnf install -y ords
+sudo dnf install -y ords-24.3.2-1.el8
 ```
 
 **NOTE**. The package creates the ```oracle``` user and puts the installation and configuration under the oracle ownership.
