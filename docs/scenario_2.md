@@ -62,6 +62,23 @@ Start the ORDS configuration process.
 ords install adb --interactive --prompt-password
 ```
 
+Enter the parameters.
+
+```
+Enter the Autonomous Database Wallet path: <wallet_path>
+Enter a number to select the TNS Network alias to use: 1
+Enter the administrator username [ADMIN]: ADMIN
+Enter the database password for ADMIN: <password>
+Enter the ORDS runtime database username [ORDS_PUBLIC_USER2]: ORDS_PUBLIC_USER2
+Enter the database password for ORDS_PUBLIC_USER2: <password>
+Enter the PL/SQL Gateway database username: ORDS_PLSQL_GATEWAY2
+Enter the database password for ORDS_PLSQL_GATEWAY2: <password>
+Enter a number to select additional feature(s) to enable: 1
+Enter a number to configure and start ORDS in standalone mode: 1
+Enter a number to select the protocol: 1
+Enter the HTTP port [8080]: 8080
+```
+
 **NOTE**. Use this script if the first configurations fails.
 
 ```
