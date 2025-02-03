@@ -67,3 +67,14 @@ Start the ORDS configuration process.
 ```
 ords install adb --interactive --prompt-password
 ```
+
+NOTE. Use this script if the first configurations fails.
+
+```
+BEGIN
+    ORDS_ADMIN.CONFIG_PLSQL_GATEWAY(
+        p_runtime_user       => 'ORDS_PUBLIC_USER2', 
+        p_plsql_gateway_user => 'ORDS_PLSQL_GATEWAY2'
+    );
+END;
+```
