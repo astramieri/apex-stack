@@ -18,8 +18,17 @@ See notes [here](./docs/scenario_1.md).
 The architecture includes:
 - **Oracle Autonomous Database (ADB)** with Oracle APEX enabled
 - **Oracle REST Data Services (ORDS)** for exposing APEX applications and APIs
-- **NGINX** as a reverse proxy for ORDS and APEX
 - **Custom Domain** & SSL/TLS configuration for secure access
 
 See notes [here](./docs/scenario_2.md).
+
+## Scenario 3 (work in progress)
+
+The architecture includes:
+- **Oracle Autonomous Database (ADB)** with Oracle APEX enabled
+- **Oracle REST Data Services (ORDS)** for exposing APEX applications and APIs
+- **NGINX** as a reverse proxy for ORDS and APEX
+- **Custom Domain** & SSL/TLS configuration for secure access
+
+See notes [here](./docs/scenario_3.md).
 

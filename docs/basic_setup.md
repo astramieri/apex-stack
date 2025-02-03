@@ -41,7 +41,7 @@ Check NGINX status.
 sudo systemctl status nginx
 ```
 
-## Step 3 - Configure instance firewall
+## Step 3 - Configure firewall
 
 Configure and reload firewall.
 
