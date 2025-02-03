@@ -20,19 +20,13 @@ Check ADB ORDS version.
 
 ```
 SELECT ords.installed_version FROM dual;
-
-24.3.2.r3121009
-```
-
-Check ORDS package version.
-
-```
-sudo dnf --showduplicates list ords
 ```
 
 Install ORDS from the repositories.
 
 ```
+sudo dnf --showduplicates list ords
+
 sudo dnf install -y ords-24.3.2-1.el8
 ```
 
@@ -68,7 +62,7 @@ Start the ORDS configuration process.
 ords install adb --interactive --prompt-password
 ```
 
-NOTE. Use this script if the first configurations fails.
+**NOTE**. Use this script if the first configurations fails.
 
 ```
 BEGIN
