@@ -181,6 +181,12 @@ Test NGINX configuration.
 sudo nginx -t 
 ```
 
+Restart NGINX.
+
+```
+sudo nginx -s reload
+```
+
 ## Step 8 - Setup ORDS to start automatically
 
 Setup ORDS to start automatically on boot.
