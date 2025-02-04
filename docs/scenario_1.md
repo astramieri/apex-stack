@@ -15,17 +15,17 @@ See notes [here](./basic_setup.md).
 
 ## Step 1 - Configure NGINX for APEX
 
-Add a reverse proxy entry for the domain ```mydomain.com```.
+Add a reverse proxy entry for the domain ```<my_domain>```.
 
 ```
-sudo nano /etc/nginx/conf.d/mydomain.com.conf
+sudo nano /etc/nginx/conf.d/<my_domain>.conf
 ```
 
-**NOTE.** Replace ```<my_apex_url>```.
+**NOTE.** Replace ```<my_domain>``` and ```<my_apex_url>```.
 
 ```
 server {
-    server_name mydomain.com;
+    server_name <my_domain>;
 
     location / {
         rewrite ^/$ /ords permanent;
