@@ -112,7 +112,7 @@ sudo semodule -i apex_proxy.pp
 Edit the NGINX configuration file.
 
 ```
-sudo nano /etc/nginx/conf.d/mydomain.com.conf
+sudo nano /etc/nginx/conf.d/<my_domain>.conf
 ```
 
 **NOTE.** Replace ```<my_apex_workspace>``` and ```<my_apex_app>```.
