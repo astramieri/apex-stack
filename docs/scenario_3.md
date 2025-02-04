@@ -152,8 +152,8 @@ server {
     server_name <my_domain>;
 
     # SSL Configuration
-    ssl_certificate /etc/pki/ords/fullchain.pem;
-    ssl_certificate_key /etc/pki/ords/privkey.pem;
+    ssl_certificate /etc/letsencrypt/live/<my_domain>/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/<my_domain>/privkey.pem;
 
     ssl_protocols TLSv1.2 TLSv1.3;
     ssl_ciphers HIGH:!aNULL:!MD5;
