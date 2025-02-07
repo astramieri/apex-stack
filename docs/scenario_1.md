@@ -55,7 +55,7 @@ Test NGINX configuration.
 sudo nginx -t 
 ```
 
-## Step 2 - Install *Let´s Encrypt*
+## Step 2 - Install SSL certificate
 
 Enable the EPEL repository.
 
