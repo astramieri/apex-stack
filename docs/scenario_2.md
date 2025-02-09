@@ -6,7 +6,7 @@ The architecture includes:
 
 - **Custom Domain** & SSL/TLS configuration for secure access
 
-![Scenario 1](./images/scenario_2.png)
+![Scenario 2](./images/scenario_2.png)
 
 ## Notes
 

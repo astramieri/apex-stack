@@ -6,6 +6,8 @@ The architecture includes:
 - **NGINX** as a reverse proxy for ORDS and APEX
 - **Custom Domain** & SSL/TLS configuration for secure access
 
+![Scenario 3](./images/scenario_3.png)
+
 ## Notes
 
 Please note that the following points are not intended as a step-by-step guide but rather a collection of helpful reminders to refer to as needed.
