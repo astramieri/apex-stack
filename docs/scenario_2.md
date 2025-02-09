@@ -2,8 +2,11 @@
 
 The architecture includes:
 - **Oracle Autonomous Database (ADB)** with Oracle APEX enabled
-- **Oracle REST Data Services (ORDS)** for exposing APEX applications and APIs
+- **Oracle REST Data Services (ORDS)** for exposing APEX applications and APIs
+
 - **Custom Domain** & SSL/TLS configuration for secure access
+
+![Scenario 1](./images/scenario_2.png)
 
 ## Notes
 
