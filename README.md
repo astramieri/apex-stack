@@ -22,7 +22,7 @@ The architecture includes:
 
 See notes [here](./docs/scenario_2.md).
 
-## Scenario 3 (work in progress)
+## Scenario 3
 
 The architecture includes:
 - **Oracle Autonomous Database (ADB)** with Oracle APEX enabled
