@@ -5,6 +5,8 @@ The architecture includes:
 - **NGINX** as a reverse proxy for APEX
 - **Custom Domain** & SSL/TLS configuration for secure access
 
+![Scenario 1](./images/scenario_1.png)
+
 ## Notes
 
 Please note that the following points are not intended as a step-by-step guide but rather a collection of helpful reminders to refer to as needed.
